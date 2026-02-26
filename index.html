@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urbica Invest - Próximamente</title>
+    <title>Urbica Invest - Inversión inmobiliaria</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -62,19 +62,20 @@
         }
         
         h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.03em;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-bottom: 3rem;
+            letter-spacing: -0.01em;
+            color: #e0e0e0;
         }
         
-        .subtitle {
-            font-size: 1.25rem;
+        .description {
+            font-size: 1.125rem;
             font-weight: 300;
             color: #a0a0a0;
-            margin-bottom: 3rem;
-            line-height: 1.6;
+            line-height: 1.8;
+            margin-bottom: 3.5rem;
         }
         
         .contact-box {
@@ -92,7 +93,6 @@
         .contact-box:hover {
             background: rgba(255, 255, 255, 0.05);
             border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
         }
         
         .contact-box svg {
@@ -101,46 +101,18 @@
             opacity: 0.6;
         }
         
-        .email {
+        .email a {
+            color: #ffffff;
+            text-decoration: none;
             font-size: 1rem;
             font-weight: 400;
             letter-spacing: -0.01em;
         }
-
-        .email a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        
-        .status {
-            position: absolute;
-            bottom: 3rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.875rem;
-            color: #666;
-        }
-        
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: #4ade80;
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
         
         @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
-            .subtitle { font-size: 1.1rem; }
             .logo { font-size: 1.5rem; margin-bottom: 2rem; }
+            h1 { font-size: 1.25rem; margin-bottom: 2rem; }
+            .description { font-size: 1rem; margin-bottom: 2.5rem; }
             .container { padding: 2rem 1.5rem; }
         }
     </style>
@@ -148,11 +120,14 @@
 <body>
     <div class="container">
         <div class="logo">URBICA INVEST</div>
-        <h1>Próximamente</h1>
-        <p class="subtitle">
-            Inversión inmobiliaria en Costa del Sol.<br>
-            Compra, rehabilitación, alquiler vacacional y revalorización de activos.
+        
+        <h1>Inversión inmobiliaria — Costa del Sol</h1>
+        
+        <p class="description">
+            Rehabilitación y alquiler vacacional.
+            Adquisición y coinversión selectiva de activos con potencial<br>
         </p>
+        
         <div class="contact-box">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -160,11 +135,6 @@
             </svg>
             <span class="email"><a href="mailto:info@urbicainvest.com">info@urbicainvest.com</a></span>
         </div>
-    </div>
-    
-    <div class="status">
-        <span class="status-dot"></span>
-        <span>Sitio web en desarrollo</span>
     </div>
 </body>
 </html>
